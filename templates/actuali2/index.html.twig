@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Actuali2Controller!{% endblock %}
+
+{% block body %}
+
+    {% for message in app.flashes('corregir') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {{ form(formulario2) }}
+    {{ dump(Ver) }}
+{% endblock %}

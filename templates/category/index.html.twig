@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CaregoryController!{% endblock %}
+
+{% block body %}
+    {% for message in app.flashes('Exito1') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {{ form(formulario1) }}
+
+    {{ dump(ProductCategory) }}
+{% endblock %}
